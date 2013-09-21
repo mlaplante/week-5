@@ -18,6 +18,7 @@
 		850435DA17EDDF6C00FEDE68 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 850435D917EDDF6C00FEDE68 /* Default-568h@2x.png */; };
 		850435E617EDE0F300FEDE68 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850435E517EDE0F300FEDE68 /* Storyboard.storyboard */; };
 		850435E917EDEB5500FEDE68 /* LPDynamicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 850435E817EDEB5500FEDE68 /* LPDynamicTableViewController.m */; };
+		85B37C2B17EDF62000575AC1 /* LPModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B37C2A17EDF62000575AC1 /* LPModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		850435E517EDE0F300FEDE68 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		850435E717EDEB5500FEDE68 /* LPDynamicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPDynamicTableViewController.h; sourceTree = "<group>"; };
 		850435E817EDEB5500FEDE68 /* LPDynamicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPDynamicTableViewController.m; sourceTree = "<group>"; };
+		85B37C2917EDF62000575AC1 /* LPModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPModalViewController.h; sourceTree = "<group>"; };
+		85B37C2A17EDF62000575AC1 /* LPModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPModalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 			children = (
 				850435E717EDEB5500FEDE68 /* LPDynamicTableViewController.h */,
 				850435E817EDEB5500FEDE68 /* LPDynamicTableViewController.m */,
+				85B37C2917EDF62000575AC1 /* LPModalViewController.h */,
+				85B37C2A17EDF62000575AC1 /* LPModalViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 				850435D017EDDF6C00FEDE68 /* main.m in Sources */,
 				850435D417EDDF6C00FEDE68 /* LPAppDelegate.m in Sources */,
 				850435E917EDEB5500FEDE68 /* LPDynamicTableViewController.m in Sources */,
+				85B37C2B17EDF62000575AC1 /* LPModalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +339,7 @@
 				850435DF17EDDF6C00FEDE68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
