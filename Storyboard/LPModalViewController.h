@@ -10,4 +10,6 @@
 
 @interface LPModalViewController : UIViewController
 
+- (IBAction)onDoneTapped:(id)sender;
+
 @end

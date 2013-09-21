@@ -35,4 +35,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)onDoneTapped:(id)sender {
+    
+    [self.navigationController dismissViewControllerAnimated: YES
+                                                  completion:nil];
+}
+
 @end

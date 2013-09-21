@@ -152,7 +152,11 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81y-YW-sUF">
                                 <items>
                                     <navigationItem title="Title" id="vhg-5v-r3Z">
-                                        <barButtonItem key="leftBarButtonItem" title="Done" id="D5e-VH-oG2"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Done" id="D5e-VH-oG2">
+                                            <connections>
+                                                <action selector="onDoneTapped:" destination="6r2-6O-qVh" id="P6D-vJ-AYW"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -327,6 +331,9 @@
         </class>
         <class className="LPModalViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LPModalViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="onDoneTapped:"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
