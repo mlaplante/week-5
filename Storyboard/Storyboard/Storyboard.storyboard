@@ -57,6 +57,9 @@
                                             <constraint firstItem="sOQ-Xx-yNU" firstAttribute="top" secondItem="h12-Wr-bH9" secondAttribute="top" constant="11" id="3Y9-tN-cqS"/>
                                             <constraint firstItem="sOQ-Xx-yNU" firstAttribute="leading" secondItem="h12-Wr-bH9" secondAttribute="leading" constant="30" id="WWo-Xt-VyZ"/>
                                         </constraints>
+                                        <connections>
+                                            <segue destination="dwl-Z3-csP" kind="push" id="PLH-3Y-yZW"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -130,7 +133,37 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0if-7J-QPV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-450" y="-636"/>
+            <point key="canvasLocation" x="-900" y="-834"/>
+        </scene>
+        <!--Dynamic Table View Controller-->
+        <scene sceneID="vFD-Zc-gpY">
+            <objects>
+                <tableViewController id="dwl-Z3-csP" customClass="LPDynamicTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qIu-UO-klh">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="qhL-kQ-LYo">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dwl-Z3-csP" id="F6j-1s-fiT"/>
+                            <outlet property="delegate" destination="dwl-Z3-csP" id="Ozq-UI-qUL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="qcq-U7-Sfn"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e9O-ng-EeJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-117" y="-1192"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="Qd8-ih-loq">
@@ -141,7 +174,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
-                            <tableViewSection headerTitle="Section-1" id="GsW-Ta-uMF">
+                            <tableViewSection headerTitle="static table view" id="GsW-Ta-uMF">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Qvp-54-Luj">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
@@ -185,7 +218,7 @@
                                         </view>
                                         <constraints>
                                             <constraint firstItem="lpE-t4-FQd" firstAttribute="leading" secondItem="0ly-H6-Lw0" secondAttribute="leading" constant="20" type="default" id="Ars-Yj-6O1"/>
-                                            <constraint firstItem="lpE-t4-FQd" firstAttribute="top" secondItem="0ly-H6-Lw0" secondAttribute="top" constant="10" id="irf-1K-XyM"/>
+                                            <constraint firstItem="lpE-t4-FQd" firstAttribute="centerY" secondItem="0ly-H6-Lw0" secondAttribute="centerY" type="default" id="GXE-xV-z0L"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="a8C-wk-vxI">
@@ -220,7 +253,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hC3-44-TwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-69" y="-994"/>
+            <point key="canvasLocation" x="-519" y="-1192"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OBG-bt-eR0">
@@ -235,14 +268,9 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QiR-na-u57" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-878" y="-636"/>
+            <point key="canvasLocation" x="-1328" y="-834"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
