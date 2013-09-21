@@ -84,6 +84,9 @@
                                             <constraint firstItem="5sb-9Y-aip" firstAttribute="leading" secondItem="kS9-cB-YEn" secondAttribute="leading" constant="30" id="bO4-jX-ySr"/>
                                             <constraint firstItem="5sb-9Y-aip" firstAttribute="top" secondItem="kS9-cB-YEn" secondAttribute="top" constant="12" id="poT-8W-i3u"/>
                                         </constraints>
+                                        <connections>
+                                            <segue destination="hIS-IM-ldR" kind="push" id="ZEh-Sk-U0F"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="sW5-Pd-y7C">
                                         <rect key="frame" x="0.0" y="227" width="320" height="44"/>
@@ -104,6 +107,9 @@
                                             <constraint firstItem="owp-N8-Lu8" firstAttribute="top" secondItem="sW5-Pd-y7C" secondAttribute="top" constant="11" id="grA-PH-P8p"/>
                                             <constraint firstItem="owp-N8-Lu8" firstAttribute="leading" secondItem="sW5-Pd-y7C" secondAttribute="leading" constant="30" id="zRK-Z1-d40"/>
                                         </constraints>
+                                        <connections>
+                                            <segue destination="6r2-6O-qVh" kind="modal" id="AWQ-1Y-vIa"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="YCR-AF-GYU">
                                         <rect key="frame" x="0.0" y="271" width="320" height="45"/>
@@ -133,7 +139,36 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0if-7J-QPV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-900" y="-834"/>
+            <point key="canvasLocation" x="-940" y="-850"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iyC-oo-6EW">
+            <objects>
+                <viewController id="6r2-6O-qVh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pEE-qj-eQI">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81y-YW-sUF">
+                                <items>
+                                    <navigationItem title="Title" id="vhg-5v-r3Z">
+                                        <barButtonItem key="leftBarButtonItem" title="Done" id="D5e-VH-oG2"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="81y-YW-sUF" firstAttribute="leading" secondItem="pEE-qj-eQI" secondAttribute="leading" type="default" id="VuT-kS-oya"/>
+                            <constraint firstItem="81y-YW-sUF" firstAttribute="trailing" secondItem="pEE-qj-eQI" secondAttribute="trailing" type="default" id="dC5-ou-WRX"/>
+                            <constraint firstItem="81y-YW-sUF" firstAttribute="top" secondItem="pEE-qj-eQI" secondAttribute="top" type="default" id="fGM-Mp-j8Q"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KXk-lg-k2G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-117" y="-484"/>
         </scene>
         <!--Dynamic Table View Controller-->
         <scene sceneID="vFD-Zc-gpY">
@@ -164,6 +199,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e9O-ng-EeJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-117" y="-1192"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="btt-ZB-m9Z">
+            <objects>
+                <viewController id="hIS-IM-ldR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pxv-a6-1sy">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mgw-M6-2WT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZwX-fB-Fg7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-519" y="-484"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="Qd8-ih-loq">
@@ -271,6 +321,14 @@
             <point key="canvasLocation" x="-1328" y="-834"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="LPDynamicTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LPDynamicTableViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
